@@ -1,0 +1,12 @@
+.bg-base{
+    background-image: linear-gradient(to right, rgb(170, 170, 170), rgb(252, 92, 0));
+}
+
+.bg-logo{
+    background-color: transparent;
+    border-radius: 100%;
+    transition-duration: 0.5s;
+}
+.bg-logo:hover{
+    background-color: rgb(252, 92, 0);
+}
