@@ -18,10 +18,29 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
   <a class="navbar-brand" href="#">Navbar</a>
+  
+  <form class="form-inline d-none d-sm-block">
+  <svg class="bi bi-search" type="submit" width="50px" height="25px" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M12.442 12.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path>
+  <path fill-rule="evenodd" d="M8.5 14a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM15 8.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path>
+  </svg>
+     
+     <input class="form-control" type="search" placeholder="Pesquisa" aria-label="Search">
+  </form>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+    </button>
+
+    
+  
   <div class="collapse navbar-collapse" id="navbarNav">
+  <form class="form-inline d-sm-none">
+      <svg class="bi bi-search" type="submit" width="50px" height="30px" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M12.442 12.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path>
+      <path fill-rule="evenodd" d="M8.5 14a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM15 8.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path>
+      </svg>  
+      <input class="form-control" type="search" placeholder="Pesquisa" aria-label="Search">
+  </form>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -37,6 +56,7 @@
       </li>
     </ul>
   </div>
+
   </div>
 </nav>
     </header>
@@ -81,7 +101,7 @@
   </a>
 </div>
 </section>
-    
+     
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
