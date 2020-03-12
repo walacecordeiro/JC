@@ -42,9 +42,7 @@
 </nav>
     </header>
 
-    <section>
-      <h1> Mercinho </h1>
-    </section>
+    
 
 
 
