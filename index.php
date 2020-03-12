@@ -53,7 +53,7 @@
           include("pages/empresa.php");
       } 
   } else {
-      include("index.php");
+      include("pages/inicio.php");
   }
 ?>
 
