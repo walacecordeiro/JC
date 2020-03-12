@@ -1,6 +1,5 @@
 <?php
 include_once('./controller/mensagens.php')
-include_once('./controller/control_Contato.php')
 ?>
 
 <section class="container bg-branco">
