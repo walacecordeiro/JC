@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11-Mar-2020 às 19:16
--- Versão do servidor: 10.4.6-MariaDB
--- versão do PHP: 7.3.9
+-- Tempo de geração: 12-Mar-2020 às 19:42
+-- Versão do servidor: 10.4.11-MariaDB
+-- versão do PHP: 7.3.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -41,19 +41,6 @@ CREATE TABLE `contato` (
   `msg` varchar(600) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `endereco`
---
-
-CREATE TABLE `endereco` (
-  `cep` varchar(9) NOT NULL,
-  `endereco` varchar(100) DEFAULT NULL,
-  `numero` varchar(50) DEFAULT NULL,
-  `complemento` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 --
 -- Índices para tabelas despejadas
 --
@@ -62,14 +49,7 @@ CREATE TABLE `endereco` (
 -- Índices para tabela `contato`
 --
 ALTER TABLE `contato`
-  ADD PRIMARY KEY (`id_contato`),
-  ADD KEY `cep` (`cep`);
-
---
--- Índices para tabela `endereco`
---
-ALTER TABLE `endereco`
-  ADD PRIMARY KEY (`cep`);
+  ADD PRIMARY KEY (`id_contato`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
