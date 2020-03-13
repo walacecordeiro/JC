@@ -1,7 +1,16 @@
-.carouselaltura{
-    height: 400px;
-}
-#carouselHeader img{
+.seccarr{
     height: 400px;
 }
 
+
+
+@media screen and (max-width:600px){
+    .seccarr{
+        height: 200px;
+    }
+
+    .textomargin{
+        text-align: justify;
+        padding: 30px 30px 5px;
+    }
+}
