@@ -1,5 +1,5 @@
 <?php
-include_once('./controller/mensagens.php')
+include_once('./controller/mensagens.php');
 ?>
 
 <section class="container bg-branco">

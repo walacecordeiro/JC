@@ -1,6 +1,6 @@
 
 
-<section>
+<section mehtod="post" action="index.php?pag=emp">
 <div id="carouselHeader" class="carousel slide  " data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>

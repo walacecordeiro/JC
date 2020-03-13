@@ -29,35 +29,36 @@
   </form>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Empresa</a>
+        <a class="nav-link" href="index.php?pag=emp">Empresa</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Serviços</a>
+        <a class="nav-link" href="index.php?pag=serv">Serviços</a>
       </li>
     </ul>
   </div>
 </nav>
     </header>
 
-    <?php
-        include_once('pages/mensagens.php');
-        if (!empty($_GET)) {
-            if ($_GET["pag"] == "cad") {
-                include("pages/formUser.php");
-            } else if ($_GET["pag"] == "log") {
-                include("pages/login.php");
-            } else if ($_GET["pag"] == "perfil") {
-                include("pages/perfilUser.php");
-            } else {
-                include("pages/inicio.php");
-            }
-        } else {
-            include("pages/inicio.php");
-        }
-        ?>
+    
+
+
+
+<?php
+  include_once('pages/mensagens.php');
+  if (!empty($_GET)) {
+      if ($_GET["pag"] == "emp") {
+          include("pages/empresa.php");
+       } if ($_GET["pag"] == "serv")  
+        include("pages/servicos.php");
+      
+  } else {
+      include("pages/inicio.php");
+  }
+?>
+
 
       
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
