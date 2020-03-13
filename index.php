@@ -13,9 +13,10 @@
   </head>
   <body>
 
+
     <header class="bg-base">
     <nav class="container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand p-0 bg-logo" href="index.php?pag=inicio">
+        <a class="navbar-b/rand p-0 bg-logo" href="index.php?pag=inicio">
           <img src="img/logojc.png" style="width: 130px;" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

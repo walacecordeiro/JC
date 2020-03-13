@@ -50,7 +50,7 @@
       <div class="col-sm-12 p-0 py-5">
 
         <div class="col-sm-12 p-0 text-center">
-          <button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Leia mais</button>
+          <button class="btn btn-primary btn-md btn-block" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2" >Leia mais</button>
         </div>
       
       
