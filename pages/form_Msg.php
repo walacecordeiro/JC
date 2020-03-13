@@ -30,6 +30,26 @@ if (!empty($_POST)) {
     mysqli_close($conn);
 }
 
+function validar($user)
+{
+    $erros = "";
+    if ($user['nome'] == "") {
+        $erros .= "Nome em branco.<br>";
+    }
+    if ($user['email'] == "") {
+        $erros .= "E-mail em branco.<br>";
+    }
+    if ($user['senha'] == "") {
+        $erros .= "Senha em branco.<br>";
+    } else if (strlen($user['senha']) < 7) {
+        $erros .= "Senha muito curta. Minimo de 8 caracteres.<br>";
+    } else if ($user['senha'] != $user["confsenha"]) {
+        $erros .= "Senhas diferentes.<br>";
+    }
+    return $erros;
+}
+
+
 ?>
 
 <section class="container bg-branco">
@@ -37,39 +57,39 @@ if (!empty($_POST)) {
     <form method="post" action="" >
 
         <div class="form-group">
-            <input type="text" class="form-control" name="nome" placeholder="Nome">
+            <input type="text" class="form-control" name="nome" placeholder="Nome" required>
         </div>
 
         <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="E-mail">
+            <input type="email" class="form-control" name="email" placeholder="E-mail" required>
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="tel" placeholder="Telefone">
+            <input type="text" class="form-control" name="tel" placeholder="Telefone" required>
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="cep" maxlength="9" id="cep" placeholder="CEP">
+            <input type="text" class="form-control" name="cep" maxlength="9" id="cep" placeholder="CEP" required>
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="endereco" maxlength="100" placeholder="endereço da obra">
+            <input type="text" class="form-control" name="endereco" maxlength="100" placeholder="endereço da obra" required>
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="numero" placeholder="Numero">
+            <input type="text" class="form-control" name="numero" placeholder="Numero" required>
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="complemento" placeholder="Complemento">
+            <input type="text" class="form-control" name="complemento" placeholder="Complemento" required>
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" name="assunto" placeholder="Assunto">
+            <input type="text" class="form-control" name="assunto" placeholder="Assunto" required>
         </div>
 
         <div class="form-group">
-            <textarea class="form-control" name="mensagem" rows="3" placeholder="mensagem"></textarea>
+            <textarea class="form-control" name="mensagem" rows="3" placeholder="mensagem" required></textarea>
         </div>
 
         <div class="form-group text-right">
