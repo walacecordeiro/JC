@@ -12,7 +12,7 @@
 
 </section>
 
-<section class="container">
+<section class="container card">
 
 <div class="row">
 
