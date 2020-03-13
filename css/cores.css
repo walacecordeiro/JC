@@ -10,3 +10,7 @@
 .bg-logo:hover{
     background-color: rgb(252, 92, 0);
 }
+
+.bg-caixa{
+    background-color: blue;
+}
