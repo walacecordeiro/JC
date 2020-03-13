@@ -30,21 +30,32 @@ if (!empty($_POST)) {
     mysqli_close($conn);
 }
 
-function validar($user)
+function validar()
 {
     $erros = "";
-    if ($user['nome'] == "") {
+    if ($_POST['nome'] == "") {
         $erros .= "Nome em branco.<br>";
     }
-    if ($user['email'] == "") {
+    if ($_POST['email'] == "") {
         $erros .= "E-mail em branco.<br>";
     }
-    if ($user['senha'] == "") {
-        $erros .= "Senha em branco.<br>";
-    } else if (strlen($user['senha']) < 7) {
-        $erros .= "Senha muito curta. Minimo de 8 caracteres.<br>";
-    } else if ($user['senha'] != $user["confsenha"]) {
-        $erros .= "Senhas diferentes.<br>";
+    if ($_POST['tel'] == "") {
+        $erros .= "Telefone em branco.<br>";
+    }
+    if ($_POST['cep'] == "") {
+        $erros .= "CEP em branco.<br>";
+    }
+    if ($_POST['endereco'] == "") {
+        $erros .= "endereço da obra em branco.<br>";
+    }
+    if ($_POST['numero'] == "") {
+        $erros .= "Numero em branco.<br>";
+    }
+    if ($_POST['complemento'] == "") {
+        $erros .= "Complemento em branco.<br>";
+    }
+    if ($_POST['msg'] == "") {
+        $erros .= "Mensagem em branco.<br>";
     }
     return $erros;
 }
@@ -89,7 +100,7 @@ function validar($user)
         </div>
 
         <div class="form-group">
-            <textarea class="form-control" name="mensagem" rows="3" placeholder="mensagem" required></textarea>
+            <textarea class="form-control" name="mensagem" rows="3" placeholder="Mensagem" required></textarea>
         </div>
 
         <div class="form-group text-right">
