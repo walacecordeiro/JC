@@ -42,7 +42,22 @@
 </nav>
     </header>
 
-
+    <?php
+        include_once('pages/mensagens.php');
+        if (!empty($_GET)) {
+            if ($_GET["pag"] == "cad") {
+                include("pages/formUser.php");
+            } else if ($_GET["pag"] == "log") {
+                include("pages/login.php");
+            } else if ($_GET["pag"] == "perfil") {
+                include("pages/perfilUser.php");
+            } else {
+                include("pages/inicio.php");
+            }
+        } else {
+            include("pages/inicio.php");
+        }
+        ?>
 
       
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
