@@ -46,9 +46,14 @@
 
 </section>
 
-<section class="container mt-3"> 
+<section class="container mt-3 "> 
+    <div>
+      <h3 class="text-center card-title"> Nossos Princípios <h3>
+    </div>
+    
+    <p class="text text-justify" style="font-size: 16px; text-decoration: none;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, incidunt nostrum. Aliquam quasi tenetur ad, quas debitis molestiae rem minima sequi voluptatibus id sit quod libero exercitationem fuga voluptas eos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam maxime culpa tempore dolore excepturi nobis velit dolorem sit illo saepe atque doloremque, asperiores, dolorum odit deleniti ratione officiis libero</p>
 
- <h3 class="text-center card-title"> Nossos Princípios <h3>
+ 
 
 <div class="accordion" id="accordionExample">
   <div class="card">
@@ -61,7 +66,7 @@
     </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body card-text" style="font-size: 18px;">
+      <div class="card-body card-text" style="font-size: 16px;">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
       </div>
     </div>
@@ -74,7 +79,7 @@
         </button>
       </h2>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="font-size: 18px;">
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="font-size: 16px;">
       <div class="card-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid..
       </div>
@@ -88,7 +93,7 @@
         </button>
       </h2>
     </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="font-size: 18px">
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="font-size: 16px">
       <div class="card-body">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
       </div>
